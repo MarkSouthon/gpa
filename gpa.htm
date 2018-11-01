@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        div {
+
+border-radius: 10px;
+background-color: lightgrey;
+width: 340px;
+min-height: 36px;
+border: 4px solid green;
+padding: 12px;
+margin: 25px;
+}
+        h1 {
+            font-size: 1.5em
+        }
+               input {
+            border-radius: 10px;
+            width: 60px;
+            min-height: 36px;
+            border: 5px solid green;
+            margin: 5px;
+        }
+button {
+background: palegreen;
+border-radius: 10px;
+width: 180px;
+min-height: 60px;
+border: 5px solid black;
+margin: 18px;
+padding:0px;
+font-size: 16px;
+}
+    label,
+    input,
+    button {
+        
+    }
+
+    input {
+
+        margin-bottom: 1em;
+    }
+}
+</style>
+</head>
+
+<body>
+        <div>
+    <img src="logo.png" alt="Rossmoyne SHS logo" style="width:84px;height:102px;>
+</div>
+    <h1>GPA</h1>
+    <br><p style="font-size:25px;">Enter how many of each grade you received in your School Report, then click <i>Calculate GPA</i>. </p>
+    
+        <label style="font-size:200%;"for="Agrade">A</label>   
+        <input style="font-size:200%; text-align:center;" type="number" id="agr" name="agr" value=0 min=0 max=12 required>
+        <label style="font-size:200%; for="Bgrade">B</label>
+        <input style="font-size:200%; text-align:center;" type="number" id="bgr" name="bgr" value=0 min=0 max=12 required>
+        <label style="font-size:200%; for="Cgrade">C</label>
+        <input style="font-size:200%; text-align:center;" type="number" id="cgr" name="cgr" value=0 min=0 max=12 required>
+        <label style="font-size:200%; for="Dgrade">D</label>
+        <input style="font-size:200%; text-align:center;" type="number" id="dgr" name="dgr" value=0 min=0 max=12 required>
+        <label style="font-size:200%;" for="Egrade">E</label>
+        <input style="font-size:200%; text-align:center;" type="number" id="egr" name="egr" value=0 min=0 max=12 required>
+    
+    
+    <button> Calculate GPA </button>
+    <div style="font-size:200%; text-align:center; width: 140px;" id="gparesult"></div>
+    <p style="font-size:20px;">Your GPA will range between a minimum of 1 and a maximum of 5. Certificates are awarded to students at assemblies for the following GPA scores.<br>5.00 Outstanding<br>4.80-4.99 Excellent<br>4.60-4.79 High Achievement </p>
+    <p></p>
+    <script src="main.js"></script>
+</body>
+
+
+</head>
+
+</html>
